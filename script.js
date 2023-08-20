@@ -11,17 +11,17 @@ async function checkWeather(city){
     var data = await response.json();
     if(response.status == 404){
         errorMsg.display ='block';
-        // detail.display = 'none';
-        // weather.display = 'none';
+        document.querySelector('.weather').display = 'none';
+        document.querySelector('.detail').display = 'none';
     }else{
         weatherIcon.src.value = //'/images/{somthing}.png'
-        document.querySelector('.temperature').innerHTML = Math.round(data.main.temp)+" C";
+        document.querySelector('.temperature').innerHTML = Math.round(data.main.temp)+"°C";
         document.querySelector('.City').innerHTML = data.name;
         document.querySelector('.humidity').innerHTML = data.main["humidity"]+"%";
         document.querySelector('.wind').innerHTML = data.wind.speed+" Km/h";
         errorMsg.display ='none';
-        // weather.display = 'block';
-        // detail.display = 'block';
+        document.querySelector('.weather').display = 'block';
+        document.querySelector('.detail').display = 'flex';
     }
 }
 button.addEventListener('click', ()=> {
