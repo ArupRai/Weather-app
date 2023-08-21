@@ -17,13 +17,13 @@ body{
     padding: 40px 35px;
 }
 .error{
+    display: none;
     margin-top: 3px;
     margin-left: 16px;
     font-size: small;
     color: rgb(255, 0, 0);
     text-align: left;
     font-weight: 600;
-    display: none;
 }
 .search{
     display: flex;
@@ -99,4 +99,8 @@ body{
     font-size: 28px;
     margin-top: -10px;
     font-weight: 600;
+}
+.detail,
+.weather{
+    display: none;
 }
