@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-Forcast</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw9sdLmIKhn8QD2ppeAlmCT7JCNUvIMp8&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" placeholder="  City/Town Name  " class="searchBar" spellcheck="false">
+            <input type="text" placeholder="  City/Town Name  " class="searchBar" id="searchBar" spellcheck="false">
             <button><img src="images\Search.png" class="searchIcon"></button>
         </div>
         <div class="error">
